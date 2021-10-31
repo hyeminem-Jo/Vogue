@@ -1,0 +1,103 @@
+#top {
+  height: 130px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+#top >.inner {
+  display: flex;
+  max-width: 90%;
+}
+
+#top .navi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navi__logo {
+  font-size: 0;
+  background: url(../img/vogue_logo.png) no-repeat center left 7px;
+  background-size: 90%;
+  height: 100%;
+  flex: 1;
+  transition: 0.3s;
+}
+
+.navi__logo a {
+  display: block;
+  height: 100%;
+}
+
+.navi__left {
+  justify-content: flex-end;
+}
+
+.gnb {
+  flex: 1.7;
+  display: flex;
+  padding-top: 80px;
+  transition: 0.3s;
+}
+
+.gnb-li a {
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.gnb-li a:hover {
+  color: crimson;
+}
+
+.trigger {
+  width: 43px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  display: none;
+}
+
+.trigger span {
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  transition: .3s;
+}
+
+.trigger span:first-child {
+  top: 0;
+  left: 0;
+}
+
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 85%;
+  right: 0;
+}
+
+.trigger span:last-child {
+  top: 100%;
+  left: 0;
+}
+
+.trigger span:nth-child(2).close {
+  opacity: 0;
+}
+
+.trigger span:first-child.close {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.trigger span:last-child.close {
+  top: 50%;
+  transform: rotate(45deg);
+}

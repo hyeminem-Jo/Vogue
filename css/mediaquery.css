@@ -1,0 +1,330 @@
+@media all and (max-width:1200px) {
+
+  .inner {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  #fashion-color .fashion-color__content .color-items {
+    width: 47%;
+  }
+
+  #runway {
+    padding: 100px 50px;
+  }
+
+  #video::before {
+    display: none;
+  }
+
+}
+
+@media all and (max-width:1024px) {
+
+  #top>.inner {
+    max-width: 100%;
+  }
+
+  #hotissue .hotissue__content {
+    width: 100%;
+  }
+
+  #hotissue .side-about,
+  #hotissue .side-about-clone {
+    display: none;
+  }
+
+  #fashion-color .fashion-color__content {
+    flex-direction: column;
+  }
+
+  #fashion-color .fashion-color__content {
+    flex-direction: column;
+  }
+
+  #fashion-color .fashion-color__content .color-items {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .fashion-color__content .color-items .color-item:nth-child(2n-1) {
+    transform: translateY(0);
+  }
+
+  .fashion-color__content .color-items .color-item {
+    margin-top: 20px;
+  }
+
+  .fashion-color__content .ncs-color {
+    margin: 0 auto;
+    height: 600px;
+  }
+
+
+  #runway .runway__title p {
+    font-size: 2.3rem;
+    margin-right: 55px;
+  }
+
+  #runway .runway__slide .slide__btns {
+    position: absolute;
+    bottom: 150px;
+    left: 410px;
+  }
+
+}
+
+@media all and (max-width:959px) {
+
+  .navi__logo.h-current {
+    background-size: 90%;
+  }
+
+  #runway .runway__slide {
+    padding-top: 0px;
+  }
+
+  #runway .runway__slide .container01 {
+    width: 45%;
+  }
+
+  #runway .runway__slide .container02 {
+    width: 39%;
+    transform: translateY(-90px);
+  }
+
+  #runway .runway__slide .container03 {
+    display: none;
+  }
+
+  #runway .runway__title {
+    text-align: center;
+    margin-bottom: 130px;
+  }
+
+
+  #top {
+    height: 70px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.151);
+  }
+
+  #title {
+    margin-top: 70px;
+  }
+
+  .navi__logo {
+    background: url(../img/vogue_logo.png) no-repeat center;
+    background-size: 60%;
+    flex: 0.7;
+  }
+
+  #top .gnb {
+    padding-top: 28px;
+  }
+
+  #runway .runway__slide .slide__btns {
+    position: absolute;
+    bottom: 110px;
+    left: 550px;
+  }
+
+}
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:959px) {
+
+  body {
+    height: auto;
+    width: 100vw;
+  }
+
+  .navi__logo {
+    width: 100px;
+  }
+
+  #top .gnb {
+    flex: 0;
+  }
+
+  #top .gnb-li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media all and (max-width:768px) {
+
+  #hotissue {
+    height: 2600px;
+  }
+
+  #subscribe .title {
+    font-size: 35px;
+  }
+
+  #subscribe .desc {
+    font-size: 1.1rem;
+  }
+
+  .navi {
+    position: relative;
+    justify-content: flex-end !important;
+    padding-left: 100px;
+  }
+
+  .navi__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    background-size: 90%;
+    background-color: #fff;
+  }
+
+}
+
+@media all and (max-width:605px) {
+  .fashion-color__content .ncs-color {
+    width: 100%;
+  }
+
+  #video {
+    height: 600px;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+
+  #top .gnb {
+    flex: 1;
+    justify-content: center;
+  }
+
+  #top .gnb-li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+  #top .gnb {
+    display: none;
+  }
+
+  .inner {
+    padding: 0 30px;
+  }
+
+  .navi__logo {
+    width: 35%;
+  }
+
+  #search form input {
+    width: 95%;
+    padding: 18px;
+    padding-left: 55px;
+  }
+
+  #search form .fa-search {
+    padding-left: 15px;
+  }
+
+  #search .que {
+    font-size: 2.3rem;
+  }
+
+  #hotissue {
+    height: 1900px;
+  }
+
+  #hotissue .hotissue__title {
+    text-align: center;
+  }
+
+  #hotissue .hotissue__content .desc {
+    text-align: center;
+    right: 0;
+    margin: auto;
+  }
+
+  #hotissue .hotissue__content {
+    flex-direction: column;
+  }
+
+  #hotissue .hotissue__content .content__item {
+    width: 100%;
+  }
+
+
+  #hotissue .hotissue__content .content__item.item01,
+  #hotissue .hotissue__content .content__item.item02 {
+    transform: translateY(0px);
+  }
+
+  #hotissue .hotissue__content .content__item:nth-child(5),
+  #hotissue .hotissue__content .content__item:nth-child(6),
+  #hotissue .hotissue__content .content__item:nth-child(7),
+  #hotissue .hotissue__content .content__item:nth-child(8) {
+    display: none;
+  }
+
+  .trigger {
+    display: block;
+  }
+
+  #fashion-color .color-items {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .fashion-color__content .color-items .color-item {
+    width: 100%;
+    height: 100px;
+    display: flex;
+  }
+
+  .color-items .color-item .bgc-color {
+    width: 30%;
+    height: 100%;
+  }
+
+  .color-items .color-item .color-info {
+    margin-top: 20px;
+  }
+
+  #runway .runway__slide .container02 {
+    display: none;
+  }
+
+  #runway .runway__slide .container01 {
+    width: 100%;
+  }
+
+  #runway .runway__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  #runway .runway__title p {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #video {
+    height: 450px;
+  }
+
+  #subscribe {
+    background-position: center left -600px;
+  }
+
+  #subscribe .text-group {
+    margin-top: 340px;
+    text-align: center;
+    width: 100%;
+  }
+}

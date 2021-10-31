@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* 공통클래스 스타일 */
+
+* {
+  box-sizing: border-box;
+}
+
+.pt150 {
+  padding-top: 150px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.h1 {
+  font-size: 34px;
+}
+
+.h2 {
+  font-size: 28px;
+}
+
+.h3 {
+  font-size: 22px;
+}
+
+.h4 {
+  font-size: 19px;
+}
+
+.p {
+  font-size: 15px;
+}
+
+.block {
+  display: block;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+#top.h-current {
+  height: 70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.151);
+}
+
+#title.h-current {
+  margin-top: 70px;
+}
+
+.navi__logo.h-current {
+  background: url(../img/vogue_logo.png) no-repeat center;
+  background-size: 60%;
+  flex: 0.7;
+}
+
+.gnb.h-current {
+  padding-top: 28px;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
