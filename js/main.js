@@ -1,5 +1,14 @@
 
-//Trigger로 SiteMap 열기 --------------------------
+// Set a same-site cookie for first-party contexts
+document.cookie = 'cookie1=value1; SameSite=Lax';
+// Set a cross-site cookie for third-party contexts
+document.cookie = 'cookie2=value2; SameSite=None; Secure';
+
+// document.cookie = "safeCookie1=foo; SameSite=Lax";
+// document.cookie = "safeCookie2=foo";
+// document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
+// Trigger로 SiteMap 열기 --------------------------
 $('.site-map').hide().slideUp()
 $('.trigger').click(function () {
   $('.site-map').slideToggle()

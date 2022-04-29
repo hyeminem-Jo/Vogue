@@ -56,19 +56,20 @@
 }
 
 .trigger {
+  display: none;
   width: 43px;
   height: 20px;
-  cursor: pointer;
   margin-top: 20px;
   position: relative;
-  display: none;
+  cursor: pointer;
+  font-size: 0;
 }
 
 .trigger span {
+  position: absolute;
   height: 2px;
   width: 100%;
   background-color: #333;
-  position: absolute;
   transition: .3s;
 }
 
