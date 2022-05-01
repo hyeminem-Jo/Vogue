@@ -30,7 +30,6 @@
 }
 
 /* Title ------------------------------------- */
-
 #title {
   height: 1250px;
   position: relative;
@@ -53,7 +52,6 @@
 
 #title .swiper-container.container02 {
   z-index: 98;
-  /* border: 10px solid gold; */
 }
 
 #title .swiper-slide {
@@ -166,7 +164,6 @@
 
 
 /* Search ------------------------------------- */
-
 #search {
   position: absolute;
   height: 35%;
@@ -176,7 +173,6 @@
   left: 0;
   text-align: center;
   z-index: 99;
-  /* border: 5px solid orange; */
 }
 
 #search>.inner {
@@ -220,8 +216,6 @@
   border-radius: 3px;
 }
 
-/* #search .recommend {} */
-
 #search .recommend-link {
   margin-top: 10px;
   font-size: 25px;
@@ -235,7 +229,6 @@
 
 
 /* Hotissue ------------------------------------- */
-
 #hotissue {
   background-color: #fff;
   color: black;
@@ -250,7 +243,6 @@
 #hotissue .side-about {
   display: inline-block;
   position: absolute;
-  /* bottom: 0px; */
   top: 250px;
   width: 150px;
   z-index: 99;
@@ -286,7 +278,6 @@
   float: right;
   display: flex;
   flex-wrap: wrap;
-  /* gap: 7%; */
   justify-content: space-between;
   position: relative;
   padding-top: 90px;
@@ -371,7 +362,6 @@
 }
 
 /* Fashion-color ------------------------------------- */
-
 #fashion-color {
   color: #fff;
   padding-top: 100px;
@@ -415,7 +405,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 0 50px; */
   font-size: 1.3rem;
 }
 
@@ -442,7 +431,6 @@
 }
 
 #fashion-color .color-pop img {
-  /* border: 1px solid; */
   margin-left: 15px;
 }
 
@@ -622,7 +610,6 @@
 }
 
 /* Runway ------------------------------------- */
-
 #runway {
   background-color: #fff;
   padding-bottom: 300px;
@@ -820,7 +807,6 @@
   background: url(../img/vogue_subscribe_bg.jpg) no-repeat center;
   background-color: #fff;
   height: 900px;
-  /* border: 10px solid red; */
 }
 
 #subscribe .inner {
