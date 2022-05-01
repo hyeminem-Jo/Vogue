@@ -1,5 +1,4 @@
 @media all and (max-width:1200px) {
-
   .inner {
     width: 100%;
     padding: 0 50px;
@@ -122,17 +121,10 @@
     padding-top: 28px;
   }
 
-  #runway .runway__slide .slide__btns {
-    position: absolute;
-    bottom: 110px;
-    left: 550px;
-  }
-
 }
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:959px) {
-
   body {
     height: auto;
     width: 100vw;
@@ -140,6 +132,7 @@
 
   .navi__logo {
     width: 100px;
+    background-size: 100%;
   }
 
   #top .gnb {
@@ -147,14 +140,63 @@
   }
 
   #top .gnb-li a {
-    font-size: 0.85rem;
+    font-size: 14px;
   }
-}
 
-@media all and (max-width:768px) {
+  .gnb-li a {
+    padding: 10px 10px;
+  }
+
+  #title {
+    height: calc(100vh - 70px);
+  }
+
+  #title .swiper-pagination {
+    top: 500px;
+  }
 
   #hotissue {
     height: 2600px;
+  }
+
+  #fashion-color {
+    padding-top: 0;
+    padding-bottom: 200px;
+  }
+
+  #runway .runway__slide .slide__btns {
+    position: absolute;
+    bottom: 0px;
+    left: 440px;
+  }
+
+  .runway__slide .container02 {
+    position: relative;
+    left: -60px;
+  }
+}
+
+@media all and (max-width:767px) {
+
+  #title {
+    height: 950px;
+  }
+
+  #title .swiper-container.container02 {
+    height: calc(100vh - 70px);
+  }
+
+  #title .swiper-pagination {
+    top: 55%;
+  }
+
+  #search {
+    padding-bottom: 60px;
+  }
+
+  #hotissue {
+    height: 2600px;
+    padding-top: 50px;
   }
 
   #subscribe .title {
@@ -180,6 +222,67 @@
     background-color: #fff;
   }
 
+  #fashion-color {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  .fashion-color__content .ncs-color {
+    height: 400px;
+  }
+
+  #fashion-color .color-pop .color-info {
+    padding: 0 10px;
+  }
+
+  #fashion-color .color-info strong,
+  #fashion-color .color-info i {
+    font-size: 15px;
+  }
+
+  .color-items .color-item{
+    position: relative;
+  }
+
+  .color-items .color-item .c-btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    transition: .2s;
+  }
+
+  .color-items .color-item .c-btns .c-btn {
+    transform: translateY(30px);
+  }
+
+  .color-items .color-item:hover .c-btns {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    background-color: rgba(0, 0, 0, 0.556);
+  }
+
+  #runway {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  #subscribe {
+    height: 650px;
+    margin-top: 400px;
+  }
+
+  #subscribe .text-group {
+    margin-top: 200px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media all and (max-width:605px) {
@@ -320,11 +423,5 @@
 
   #subscribe {
     background-position: center left -600px;
-  }
-
-  #subscribe .text-group {
-    margin-top: 340px;
-    text-align: center;
-    width: 100%;
   }
 }

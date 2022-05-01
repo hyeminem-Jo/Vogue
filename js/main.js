@@ -1,13 +1,3 @@
-
-// Set a same-site cookie for first-party contexts
-document.cookie = 'cookie1=value1; SameSite=Lax';
-// Set a cross-site cookie for third-party contexts
-document.cookie = 'cookie2=value2; SameSite=None; Secure';
-
-// document.cookie = "safeCookie1=foo; SameSite=Lax";
-// document.cookie = "safeCookie2=foo";
-// document.cookie = "crossCookie=bar; SameSite=None; Secure";
-
 // Trigger로 SiteMap 열기 --------------------------
 $('.site-map').hide().slideUp()
 $('.trigger').click(function () {
@@ -52,9 +42,6 @@ const mySwiper = new Swiper(".runway__slide .swiper-container", {
   centeredSlides: true,
   speed: 800,
   loop: true,
-  // autoplay: {
-  //   delay: 5000
-  // },
   pagination: {
     el: ".promotion .swiper-pagination",
     clickable: true,
@@ -133,14 +120,15 @@ $(window).resize(function () {
 
 $(window).scroll(function () {
   var st = $(window).scrollTop();
-  if (st > 0) {
+
+  if (st > 0 && window.innerWidth >= 1200) {
     $("#top, .gnb, #title, .navi__logo").addClass("h-current");
   } else {
     $("#top, .gnb, #title, .navi__logo").removeClass("h-current");
   }
 
   // Hotissue aside 스크롤 효과 --------------------------
-  if ($(window).scrollTop() > po2 + 50) {
+  if (st > po2 + 50) {
     $("#hotissue .side-about").css({
       position: "fixed",
     });
@@ -150,14 +138,14 @@ $(window).scroll(function () {
     });
   }
 
-  if ($(window).scrollTop() > po3 - 780) {
+  if (st > po3 - 780) {
     $("#hotissue .side-about").css({
       position: "absolute",
     });
     $("#hotissue .side-about-clone").css({
       opacity: "1",
     });
-  } else if ($(window).scrollTop() < po3 - 780) {
+  } else if (st < po3 - 780) {
     $("#hotissue .side-about-clone").css({
       opacity: "0",
     });

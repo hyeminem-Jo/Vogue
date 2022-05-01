@@ -8,8 +8,8 @@
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  z-index: 99;
-  padding: 140px 30px;
+  z-index: 100;
+  padding: 100px 30px;
 }
 
 .site-map .map-gnb a {
@@ -53,6 +53,7 @@
 
 #title .swiper-container.container02 {
   z-index: 98;
+  /* border: 10px solid gold; */
 }
 
 #title .swiper-slide {
@@ -132,8 +133,9 @@
 
 #title .swiper-pagination {
   position: absolute;
-  top: calc(100vh - 230px);
+  top: 40%;
   left: 50%;
+  height: 50px;
   transform: translateX(-50%);
   z-index: 99;
 }
@@ -174,6 +176,7 @@
   left: 0;
   text-align: center;
   z-index: 99;
+  /* border: 5px solid orange; */
 }
 
 #search>.inner {
@@ -373,7 +376,7 @@
   color: #fff;
   padding-top: 100px;
   background: url(../img/fashion-color_bg.jpg) no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   background-color: rgba(0, 0, 0, 0.226);
   background-blend-mode: multiply;
   background-attachment: fixed;
@@ -480,24 +483,24 @@
 }
 
 #fashion-color .swiper-slide {
-  background: url(../img/vogue_fashion-color_left_img.png) no-repeat;
+  background: url(../img/vogue_fashion-color_left_img.png) no-repeat top center;
   background-size: cover;
   position: relative;
   width: 100%;
 }
 
 #fashion-color .slide02 {
-  background: url(../img/vogue_fashion-color_left_img02.png) no-repeat;
+  background: url(../img/vogue_fashion-color_left_img02.png) no-repeat top center;
   background-size: cover;
 }
 
 #fashion-color .slide03 {
-  background: url(../img/vogue_fashion-color_left_img05.png) no-repeat;
+  background: url(../img/vogue_fashion-color_left_img05.png) no-repeat top center;
   background-size: cover;
 }
 
 #fashion-color .slide04 {
-  background: url(../img/vogue_fashion-color_left_img04.png) no-repeat;
+  background: url(../img/vogue_fashion-color_left_img04.png) no-repeat top center;
   background-size: cover;
 }
 
@@ -523,7 +526,6 @@
 }
 
 #fashion-color .fashion-color__content .color-items {
-  /* border: 5px solid red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -661,12 +663,12 @@
 
 #runway .runway__slide .container01 {
   width: 35%;
-  height: 700px;
+  min-height: 700px;
 }
 
 #runway .runway__slide .container02 {
   width: 28%;
-  height: 600px;
+  min-height: 600px;
   transform: translateY(-130px);
 }
 
@@ -699,11 +701,7 @@
   font-size: 45px;
   font-weight: 700;
   line-height: 2;
-}
-
-#runway .slide__title,
-#runway .slide__desc {
-  text-shadow: 0 0 4px gray;
+  color: #fff;
 }
 
 #runway .swiper-wrapper .slide01 {
@@ -743,8 +741,8 @@
 
 #runway .runway__slide .slide__btns {
   position: absolute;
-  bottom: 150px;
-  left: 550px;
+  bottom: 7%;
+  left: 40%;
 }
 
 #runway .runway__slide .slide__btns .swiper-prev {
