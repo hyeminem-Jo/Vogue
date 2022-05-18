@@ -624,8 +624,10 @@
   margin-bottom: 70px;
 }
 
-#runway .runway__title p {
-  font-size: 4rem;
+#runway .runway__title span {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 300;
   margin-top: 30px;
 }
 
@@ -764,8 +766,8 @@
 
 /* Video ------------------------------------- */
 #video {
-  height: 900px;
   position: relative;
+  height: 900px;
   background-color: #fff;
   z-index: 10;
 }

@@ -30,8 +30,9 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script defer src="js/youtube.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -329,7 +330,7 @@
     <!-- Runway -->
     <section id="runway">
       <h1 class="runway__title">
-        Runway <p>Ready To Wear_</p>
+        Runway <span>Ready To Wear_</span>
       </h1>
       <div class="runway__slide">
         <div class="swiper-container container01">
@@ -486,8 +487,8 @@
     <!-- Video -->
     <section id="video">
       <h1 class="video__title">Vogue News</h1>
-      <div class="video__area" style="TEXT-ALIGN:center">
-        <object data="//www.youtube.com/embed/8iTtcYQO_60" type="text/html" width="100%" height="800px" allowfullscreen=""></object>
+      <div class="video__area">
+        <div id="player"></div>
       </div>
     </section>
     <!-- Subscribe -->
