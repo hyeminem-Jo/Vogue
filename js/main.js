@@ -117,7 +117,6 @@ $(window).resize(function () {
 
 // 스크롤 효과 -----------------------
 // 스크롤 시 #top 대메뉴 효과 -----------------------
-
 $(window).scroll(function () {
   var st = $(window).scrollTop();
 
